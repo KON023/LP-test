@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設備の故障を未然に防ぐ｜予知保全システム【Factory Sentinel】</title>
+    <meta name="description" content="Factory Sentinelの予知保全システムは、工場設備の異常を早期に検知し、計画外のダウンタイムを削減します。AIによる高精度な故障予測で、メンテナンスコストの最適化と生産性向上を実現。まずは無料デモでお試しください。">
+    <meta name="keywords" content="予知保全, 設備保全, 故障予測, 状態監視, メンテナンス, ダウンタイム削減, モーター, ポンプ, コンプレッサー, 工作機械, IoT, AI, 機械学習, センサー, データ分析, クラウド, 振動監視, 温度監視">
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="設備の故障を未然に防ぐ｜予知保全システム【Factory Sentinel】">
+    <meta property="og:description" content="Factory Sentinelの予知保全システムは、工場設備の異常を早期に検知し、計画外のダウンタイムを削減します。AIによる高精度な故障予測で、メンテナンスコストの最適化と生産性向上を実現。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://factory-sentinel.com">
+    <meta property="og:image" content="https://factory-sentinel.com/images/ogp.jpg">
+    
+    <!-- フォント -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <span class="material-icons">security</span>
+                <span>Factory Sentinel</span>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#benefits">メリット</a></li>
+                    <li><a href="#case">導入事例</a></li>
+                    <li><a href="#pricing">料金</a></li>
+                    <li><a href="#flow">導入の流れ</a></li>
+                    <li><a href="#faq">よくある質問</a></li>
+                </ul>
+                <a href="#contact" class="cta-button">無料デモを申し込む</a>
+            </nav>
+            <button class="menu-button" aria-label="メニュー">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">24時間365日、AIが見守る<br>
+工場の安定稼働を支える<br>次世代の予知保全</h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="100">Factory Sentinelは、製造業向けの予知保全AIシステムです。リアルタイムで設備の状態を監視し、異常を検知することで、未然に故障を防ぎ、ダウンタイムを最小限に抑えます。</p>
+        </div>
+        <div class="hero-form-container">
+            <h3 class="hero-form-title">無料デモのお申し込み</h3>
+            <p class="hero-form-description">30日間、実際の設備でシステムの機能を試用いただけます</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="company">会社名 <span class="required">必須</span></label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">お名前 <span class="required">必須</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス <span class="required">必須</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話番号</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <button type="submit" class="cta-button">無料デモを申し込む</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- フローティングCTAボタン -->
+    <a href="#contact" class="floating-cta" aria-label="無料デモを申し込む">
+      
+        <span>無料デモを<br>申し込む</span>
+    </a>
+
+    <!-- セクション区切り -->
+    <div class="section-divider divider-left"></div>
+
+    <!-- 問題提起セクション -->
+    <section id="problem" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">こんな課題を抱えていませんか？</h2>
+            <div class="problem-list" data-aos="fade-up">
+                <div class="problem-item">
+                    <span class="material-icons">error_outline</span>
+                    <p>設備の突発的な故障による生産ラインの停止</p>
+                </div>
+                <div class="problem-item">
+                    <span class="material-icons">error_outline</span>
+                    <p>過剰な予防保全によるメンテナンスコストの増大</p>
+                </div>
+                <div class="problem-item">
+                    <span class="material-icons">error_outline</span>
+                    <p>保全員の経験や勘に頼ったメンテナンス</p>
+                </div>
+                <div class="problem-item">
+                    <span class="material-icons">error_outline</span>
+                    <p>老朽化した設備の状態把握の難しさ</p>
+                </div>
+            </div>
+            
+            <div class="solution-container" data-aos="fade-up">
+                <div class="solution">
+                    <h3>Factory Sentinelで全て解決できます！</h3>
+                    <p>AIによる高精度な予知保全で、設備の故障を未然に防ぎ、<br>生産性の向上とコスト削減を実現します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション区切り -->
+    <div class="section-divider divider-right"></div>
+
+    <!-- セクション区切り -->
+    <div class="section-divider gear-pattern"></div>
+
+    <!-- 特徴セクション -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Factory Sentinel 6つの特長</h2>
+            <div class="features">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-number">Feature 01</div>
+                    <h3>幅広い設備に対応</h3>
+                    <p>多種多様なメーカー、機種の設備に対応。モーター、ポンプ、コンプレッサー、工作機械など、工場内のあらゆる設備の状態を監視します。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-number">Feature 02</div>
+                    <h3>高精度な故障予測</h3>
+                    <p>独自のAIアルゴリズムにより、高い精度で故障を予測。過去のデータパターンから異常を検知し、故障が発生する前に警告を発します。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-number">Feature 03</div>
+                    <h3>リアルタイム監視</h3>
+                    <p>24時間365日、設備の稼働状況をリアルタイムで監視。休日や夜間も含め、常に設備の状態を把握できます。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-number">Feature 04</div>
+                    <h3>分かりやすいインターフェース</h3>
+                    <p>専門知識がなくても、直感的に操作できるダッシュボード。重要な情報が一目で分かるよう設計されています。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-number">Feature 05</div>
+                    <h3>柔軟なアラート設定</h3>
+                    <p>異常検知時の通知方法（メール、SMS、アプリなど）をカスタマイズ可能。緊急度に応じた通知設定で、必要な情報を必要なタイミングでお届けします。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-number">Feature 06</div>
+                    <h3>リモートアクセス</h3>
+                    <p>どこからでも設備の状況を確認・管理できる。スマートフォンやタブレットからもアクセス可能で、外出先でも工場の状況を把握できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション区切り -->
+    <div class="section-divider divider-left"></div>
+
+    <!-- メリットセクション -->
+    <section id="benefits" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">導入メリット</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <span class="material-icons">trending_down</span>
+                    </div>
+                    <h3>ダウンタイムの削減</h3>
+                    <p>計画外の設備停止を未然に防ぎ、生産ロスを最小限に抑えます。平均で年間ダウンタイムを60%削減した実績があります。</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <span class="material-icons">savings</span>
+                    </div>
+                    <h3>メンテナンスコストの最適化</h3>
+                    <p>故障する前に適切なタイミングでメンテナンスを実施することで、部品交換費用や修理費用を削減。平均20%のコスト削減を実現しています。</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <span class="material-icons">speed</span>
+                    </div>
+                    <h3>保全業務の効率化</h3>
+                    <p>状態監視を自動化することで、保全員の負担を軽減し、より高度な業務に集中できる環境を提供します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション区切り -->
+    <div class="section-divider divider-right"></div>
+
+    <!-- セクション区切り -->
+    <div class="section-divider zigzag"></div>
+
+    <!-- 導入事例セクション -->
+    <section id="case" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">導入事例</h2>
+            <div class="case-studies-grid">
+                <div class="case-study-card" data-aos="fade-up">
+                    <div class="case-study-image">
+                        <img src="images/case1.jpg" alt="自動車部品メーカーの工場">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>A社自動車部品メーカー様</h3>
+                        <p>「Factory Sentinel導入後、設備の故障による生産停止がほぼゼロになりました。予測精度の高さに驚いています。」</p>
+                        <span class="case-study-position">生産技術部長</span>
+                    </div>
+                </div>
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-study-image">
+                        <img src="images/case2.jpg" alt="食品メーカーの工場">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>B社食品メーカー様</h3>
+                        <p>「メンテナンスコストが20%削減され、保全員の残業時間も減りました。投資以上の効果を実感しています。」</p>
+                        <span class="case-study-position">工場長</span>
+                    </div>
+                </div>
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-study-image">
+                        <img src="images/case3.jpg" alt="化学プラントの設備">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>C社化学プラント様</h3>
+                        <p>「AIの予測精度が高く、安心して設備を稼働させることができます。導入サポートも手厚く、満足しています。」</p>
+                        <span class="case-study-position">設備管理部長</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション区切り -->
+    <div class="section-divider divider-left"></div>
+
+    <!-- セクション区切り -->
+    <div class="section-divider gear-border"></div>
+
+    <!-- 料金プランセクション -->
+    <section id="pricing" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">料金プラン</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3>スタータープラン</h3>
+                        <p class="price">¥100,000<span>/月～</span></p>
+                        <p class="pricing-description">監視対象設備数に応じた従量課金制</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>基本的な異常検知機能</li>
+                        <li>リアルタイム監視</li>
+                        <li>基本的なアラート機能</li>
+                        <li>メールサポート</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="cta-button">お問い合わせ</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3>スタンダードプラン</h3>
+                        <p class="price">¥300,000<span>/月～</span></p>
+                        <p class="pricing-description">データ分析レポート、専任サポート付き</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>高度な異常検知機能</li>
+                        <li>詳細なデータ分析レポート</li>
+                        <li>カスタマイズ可能なアラート</li>
+                        <li>24時間電話・メールサポート</li>
+                        <li>専任サポート担当者</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="cta-button">お問い合わせ</a>
+                    </div>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3>プレミアムプラン</h3>
+                        <p class="price">お見積り</p>
+                        <p class="pricing-description">大規模工場、特殊要件対応</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>カスタマイズ可能な機能</li>
+                        <li>専用APIの提供</li>
+                        <li>オンサイトサポート</li>
+                        <li>導入時の現地トレーニング</li>
+                        <li>カスタムレポート作成</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="cta-button">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション区切り -->
+    <div class="section-divider divider-right"></div>
+
+    <!-- 導入の流れセクション -->
+    <section id="flow" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">導入までの流れ</h2>
+            <div class="flow-steps">
+                <div class="flow-step" data-aos="fade-up">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>無料デモの申し込み</h3>
+                        <p>まずはWebサイトから無料デモをお申し込みください。30日間、実際の設備でシステムの機能を試用いただけます。専任の担当者が丁寧にご説明いたします。</p>
+                    </div>
+                    <span class="material-icons step-icon">rocket_launch</span>
+                </div>
+                <div class="flow-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>ヒアリング・現地調査</h3>
+                        <p>担当者が御社を訪問し、現在の課題や要望をヒアリング。工場の設備状況を確認し、最適な導入プランをご提案いたします。</p>
+                    </div>
+                    <span class="material-icons step-icon">engineering</span>
+                </div>
+                <div class="flow-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>センサー設置・システム設定</h3>
+                        <p>専門スタッフがセンサーの設置とシステムの初期設定を実施。既存の設備を止めることなく、スムーズに導入いたします。</p>
+                    </div>
+                    <span class="material-icons step-icon">settings</span>
+                </div>
+                <div class="flow-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>運用開始・アフターサポート</h3>
+                        <p>AIによる24時間365日の設備監視を開始。導入後も運用サポートやトレーニングを実施し、効果的な活用をサポートいたします。</p>
+                    </div>
+                    <span class="material-icons step-icon">monitoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション区切り -->
+    <div class="section-divider divider-left"></div>
+
+    <!-- よくある質問セクション -->
+    <section id="faq" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">よくあるご質問</h2>
+            <div class="faq-list" data-aos="fade-up">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q:</span> 既存の設備に導入できますか？
+                    </div>
+                    <div class="faq-answer">
+                        <span>A:</span> はい、ほとんどの既存設備に後付けで導入可能です。特別な改造は必要ありません。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q:</span> 導入にどれくらいの期間がかかりますか？
+                    </div>
+                    <div class="faq-answer">
+                        <span>A:</span> 規模にもよりますが、一般的には2〜4週間程度です。まずは無料デモからお試しいただけます。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q:</span> 専門知識がなくても使えますか？
+                    </div>
+                    <div class="faq-answer">
+                        <span>A:</span> はい、直感的に操作できるインターフェースを採用しており、専門知識がなくても簡単に使えます。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション区切り -->
+    <div class="section-divider divider-right"></div>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">無料デモのお申し込み・お問い合わせ</h2>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-up">
+                    <h3>お気軽にお問い合わせください</h3>
+                    <p>30日間の無料デモ期間中に、Factory Sentinelの効果を実感してください。</p>
+                    <ul class="contact-details">
+                        <li>
+                            <span class="material-icons">location_on</span>
+                            <p>〒530-0001 大阪府大阪市北区梅田1-1-1</p>
+                        </li>
+                        <li>
+                            <span class="material-icons">phone</span>
+                            <p>06-XXXX-XXXX（平日9:00〜18:00）</p>
+                        </li>
+                        <li>
+                            <span class="material-icons">email</span>
+                            <p>info@factory-sentinel.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                    <div class="form-group">
+                        <label for="inquiry_type">お問い合わせ内容 <span class="required">必須</span></label>
+                    </div>
+                    <div class="form-group radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="contact-demo" name="inquiry_type" value="demo" checked>
+                            <label for="contact-demo">無料デモのお申込み</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="contact-contact" name="inquiry_type" value="contact">
+                            <label for="contact-contact">お問い合わせ</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="contact-other" name="inquiry_type" value="other">
+                            <label for="contact-other">その他</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">会社名 <span class="required">必須</span></label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">必須</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">必須</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="material-icons">security</span>
+                    <span>Factory Sentinel</span>
+                    <p>24時間365日、AIが見守る予知保全システム</p>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#features">特徴</a></li>
+                        <li><a href="#benefits">メリット</a></li>
+                        <li><a href="#case">導入事例</a></li>
+                        <li><a href="#pricing">料金</a></li>
+                        <li><a href="#flow">導入の流れ</a></li>
+                        <li><a href="#faq">よくある質問</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-info">
+                <p>株式会社インダストリアル・テクノロジーズ</p>
+                <p>〒530-0001 大阪府大阪市北区梅田1-1-1</p>
+            </div>
+            <p class="copyright">© 2024 Industrial Technologies Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- スクロールトップボタン -->
+    <button id="scroll-top" class="scroll-top visible" aria-label="トップへスクロール">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
