@@ -346,6 +346,19 @@ img {
     transition: background-color 0.3s;
 }
 
+}
+
+.slider-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 .slider-dot.active {
     background: #fff;
 }
@@ -2606,6 +2619,12 @@ img {
     .hero-stats {
         justify-content: center; /* 中央揃え */
     }
+}
+=======
+@media (max-width: 767px) {
+.feature-card.aos-init.aos-animate {
+    max-width: 100%;
+}
 }
 
 .stat-circle {
