@@ -69,3 +69,77 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 }); 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.slider-prev');
+    const nextButton = document.querySelector('.slider-next');
+    const dots = document.querySelectorAll('.slider-dot');
+    let currentIndex = 0;
+    let autoScrollInterval; // 自動スクロール用の変数を追加
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? '1' : '0';
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // 自動スクロールを開始する関数
+    function startAutoScroll() {
+        // 2秒(2000ミリ秒)ごとに次のスライドへ移動
+        autoScrollInterval = setInterval(nextSlide, 2000);
+    }
+
+    // 自動スクロールを停止する関数
+    function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
+
+    nextButton.addEventListener('click', () => {
+        nextSlide();
+        // ユーザーがボタンをクリックしたら一時的に自動スクロールを停止し、再開する
+        stopAutoScroll();
+        startAutoScroll();
+    });
+    
+    prevButton.addEventListener('click', () => {
+        prevSlide();
+        // ユーザーがボタンをクリックしたら一時的に自動スクロールを停止し、再開する
+        stopAutoScroll();
+        startAutoScroll();
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            showSlide(currentIndex);
+            // ユーザーがドットをクリックしたら一時的に自動スクロールを停止し、再開する
+            stopAutoScroll();
+            startAutoScroll();
+        });
+    });
+
+    // スライダーにマウスが乗ったら自動スクロールを停止（オプション）
+    const slider = document.querySelector('.slider-container'); // スライダーのコンテナ要素
+    if (slider) {
+        slider.addEventListener('mouseenter', stopAutoScroll);
+        slider.addEventListener('mouseleave', startAutoScroll);
+    }
+
+    showSlide(currentIndex);
+    startAutoScroll(); // ページ読み込み時に自動スクロールを開始
+});
+
